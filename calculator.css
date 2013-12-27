@@ -1,0 +1,18 @@
+body {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+#calculator {
+  font-family: monaco;
+  color: #555555;
+  background-color: #CCCCCC;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px 20px 20px 20px;
+}
+
+.operation {
+  margin: 10px auto;
+}
