@@ -1,40 +1,38 @@
+$(document).ready(function() {
 
-function bindCalculator() {
-  document.getElementById("add").onclick = function() {
+  $("#add").click(function() {
     //get numbers
-    var num1 = parseInt(document.getElementById("adder1").value);
-    var num2 = parseInt(document.getElementById("adder2").value);
+    var num1 = parseInt($("#adder1").val());
+    var num2 = parseInt($("#adder2").val());
 
     //calculate the result
-    document.getElementById("addResult").innerHTML = add(num1, num2);
-  }
+    $("#addResult").text(add(num1, num2));
+  })
 
-  document.getElementById("substract").onclick = function() {
+  $("#substract").click(function() {
     //get numbers
-    var num1 = parseInt(document.getElementById("substracter1").value);
-    var num2 = parseInt(document.getElementById("substracter2").value);
+    var num1 = parseInt($("#substracter1").val());
+    var num2 = parseInt($("#substracter2").val());
 
     //calculate the result
-    document.getElementById("substractResult").innerHTML = substract(num1, num2);
-  }
+    $("#substractResult").text(substract(num1, num2));
+  })
 
-  document.getElementById("multiply").onclick = function() {
+  $("#multiply").click(function() {
     //get numbers
-    var num1 = parseInt(document.getElementById("multiplyer1").value);
-    var num2 = parseInt(document.getElementById("multiplyer2").value);
+    var num1 = parseInt($("#multiplyer1").val());
+    var num2 = parseInt($("#multiplyer2").val());
     
     //calculate the result
-    document.getElementById("multiplyResult").innerHTML = multiply(num1, num2);
-  }
+    $("#multiplyResult").text(multiply(num1, num2));
+  })
 
-  document.getElementById("divide").onclick = function() {
+  $("#divide").click(function() {
     //get numbers
-    var num1 = parseInt(document.getElementById("divider1").value);
-    var num2 = parseInt(document.getElementById("divider2").value);
+    var num1 = parseInt($("#divider1").val());
+    var num2 = parseInt($("#divider2").val());
 
     //calculate the result
-    document.getElementById("divideResult").innerHTML = divide(num1, num2);
-  }
-}
-
-window.onload = bindCalculator
+    $("#divideResult").text(divide(num1, num2));
+  })
+})
