@@ -7,6 +7,6 @@ open SpecRunner.html in browser
 open calculator.html in browser
 
 ##Reference
-- [jasmine](http://pivotal.github.io/jasmine/)
+- [jasmine](https://jasmine.github.io/)
 - [jasmine-jquery](https://github.com/velesin/jasmine-jquery)
 - [jasmine-fixture](https://github.com/searls/jasmine-fixture)
